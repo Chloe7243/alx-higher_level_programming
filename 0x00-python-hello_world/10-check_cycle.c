@@ -11,7 +11,6 @@ int check_cycle(listint_t *list)
 
 	nodes = malloc(sizeof(listint_t) * 1000);
 	ptr = list;
-	ptr2 = list->next;
 	while (ptr != NULL)
 	{
 		for (i = 0; nodes[i] != NULL; i++)
