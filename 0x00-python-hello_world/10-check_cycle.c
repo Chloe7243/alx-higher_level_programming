@@ -2,28 +2,20 @@
 
 int check_cycle(listint_t *list)
 {
-	listint_t *ptr;
-	listint_t **nodes;
-	int i;
+	listint_t *ptr, *ptr2;
 
 	if (list == NULL)
 		return (0);
 
-	nodes = malloc(sizeof(listint_t) * 1000);
 	ptr = list;
-	while (ptr != NULL)
+	ptr2 = list->next;
+	while (ptr2 != NULL && ptr2->next != NULL)
 	{
-		for (i = 0; nodes[i] != NULL; i++)
-			if (ptr == nodes[i])
-			{
-				free(nodes);
-				return (1);
-			}
-		nodes[i++] = ptr;
-		nodes[i] = NULL;
+		if (ptr == ptr2)
+			return (1);
 		ptr = ptr->next;
+		ptr2 = ptr2->next->next;
 	}
 
-	free(nodes);
 	return (0);
 }
