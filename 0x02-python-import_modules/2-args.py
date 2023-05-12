@@ -7,9 +7,9 @@ if __name__ == "__main__":
             print("1 argument:")
         else:
             print(f"{len_args} arguments:")
-            for i, arg in enumerate(argv):
-                if i == 0:
-                    continue
-                print(f"{i}: {arg}")
+        for i, arg in enumerate(argv):
+            if i == 0:
+                continue
+            print(f"{i}: {arg}")
     else:
         print("0 arguments.")
