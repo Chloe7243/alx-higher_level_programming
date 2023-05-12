@@ -1,2 +1,2 @@
 #!/usr/bin/python3
- exec("chr(35)+\"pythoniscool\\n\"")
+exec("chr(35)+\"pythoniscool\\n\"")
