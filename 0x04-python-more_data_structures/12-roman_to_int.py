@@ -11,8 +11,11 @@ def roman_to_int(roman_string):
         if x not in main_symbols:
             return 0
         if len(roman_string) > 1 and \
-                main_symbols[x]  < main_symbols[roman_string[-1]]:
+                main_symbols[x] < main_symbols[roman_string[-1]]:
             value += (main_symbols[roman_string[-1]] - main_symbols[x])
             return value
         value += main_symbols[x]
     return value
+
+roman_number = "s"
+print("{} = {}".format(roman_number, roman_to_int(roman_number)))
