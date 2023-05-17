@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
-    if not roman_string:
+    if not roman_string or not isinstance(roman_string, str):
         return 0
     main_symbols = \
         {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
@@ -16,6 +16,3 @@ def roman_to_int(roman_string):
             return value
         value += main_symbols[x]
     return value
-
-roman_number = "s"
-print("{} = {}".format(roman_number, roman_to_int(roman_number)))
