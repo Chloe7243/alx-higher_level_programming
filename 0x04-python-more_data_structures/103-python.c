@@ -2,7 +2,6 @@
 #include <object.h>
 #include <listobject.h>
 
-
 void print_python_bytes(PyObject* p)
 {
 	Py_ssize_t i, size, m;
@@ -10,7 +9,7 @@ void print_python_bytes(PyObject* p)
 	printf("[.] bytes object info\n");
 	if (strcmp(p->ob_type->tp_name, "bytes"))
 	{
-		printf("[Error] Invalid Bytes Object\n");
+		printf("  [Error] Invalid Bytes Object\n");
 		return;
 	}
 
