@@ -5,7 +5,6 @@ def roman_to_int(roman_string):
     main_symbols = \
         {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
     value = 0
-    roman_string = roman_string.upper()
 
     for i, x in enumerate(roman_string):
         if x not in main_symbols:
