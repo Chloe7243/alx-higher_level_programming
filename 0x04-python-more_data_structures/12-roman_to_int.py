@@ -16,27 +16,3 @@ def roman_to_int(roman_string):
             return value
         value += main_symbols[x]
     return value
-
-roman_number = "X"
-print("{} = {}".format(roman_number, roman_to_int(roman_number)))
-
-roman_number = "VII"
-print("{} = {}".format(roman_number, roman_to_int(roman_number)))
-
-roman_number = "IX"
-print("{} = {}".format(roman_number, roman_to_int(roman_number)))
-
-roman_number = "LXXXVII"
-print("{} = {}".format(roman_number, roman_to_int(roman_number)))
-
-roman_number = "DCCVII"
-print("{} = {}".format(roman_number, roman_to_int(roman_number)))
-
-roman_number = "DCCVII"
-print("{} = {}".format(roman_number, roman_to_int(roman_number)))
-
-roman_number = "l"
-print("{} = {}".format(roman_number, roman_to_int(roman_number)))
-
-roman_number = "liv"
-print("{} = {}".format(roman_number, roman_to_int(roman_number)))
