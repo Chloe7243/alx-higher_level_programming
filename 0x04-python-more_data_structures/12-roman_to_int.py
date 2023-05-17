@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
-    if roman_string is None or not isinstance(roman_string, str):
+    if not roman_string or not isinstance(roman_string, str):
         return 0
     main_symbols = \
         {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
@@ -9,6 +9,8 @@ def roman_to_int(roman_string):
 
     for i, x in enumerate(roman_string):
         if x not in main_symbols:
+            return 0
+        if roman_string.count(x) > 3:
             return 0
         if len(roman_string) > 1 and \
                 main_symbols[x] < main_symbols[roman_string[-1]]:
