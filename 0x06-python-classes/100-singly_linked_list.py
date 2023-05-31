@@ -6,6 +6,7 @@ and Node objects.
 
 """
 
+
 class Node:
     """Defines a node of a singly linked list."""
 
@@ -60,6 +61,7 @@ class Node:
 
 class SinglyLinkedList:
     """Defines a singly linked list"""
+
     def __init__(self):
         """Initializes an empty SinglyLinkedList."""
         self.__head = None
