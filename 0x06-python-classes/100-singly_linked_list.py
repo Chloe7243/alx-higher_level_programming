@@ -1,6 +1,11 @@
 #!/usr/bin/python3
+"""Singly Linked Lists module.
 
-""" Node of Singly linked list"""
+This module contains methods for creating and handling SinglyLinkedList
+and Node objects.
+
+"""
+
 class Node:
     def __init__(self, data, next_node=None):
         """Initializes a Node object with the given data and next_node.
