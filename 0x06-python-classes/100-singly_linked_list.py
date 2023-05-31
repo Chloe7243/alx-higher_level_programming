@@ -1,10 +1,5 @@
 #!/usr/bin/python3
-"""Singly Linked Lists module.
-
-This module contains methods for creating and handling SinglyLinkedList
-and Node objects.
-
-"""
+"""Singly Linked Lists module."""
 
 
 class Node:
@@ -24,6 +19,7 @@ class Node:
     def data(self):
         """Get or set the data value of a node."""
         return self.__data
+
     @data.setter
     def data(self, value):
         """Sets the data value of a node.
@@ -58,6 +54,7 @@ class Node:
             raise TypeError("next_node must be a Node object")
         else:
             self.__next_node = value
+
 
 class SinglyLinkedList:
     """Defines a singly linked list"""
