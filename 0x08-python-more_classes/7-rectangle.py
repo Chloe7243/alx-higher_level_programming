@@ -50,8 +50,7 @@ class Rectangle:
             rectangle_str += "\n"
         else:
             for _ in range(self.__height):
-                rectangle_str += str(type(self).print_symbol) * self.__width
-                rectangle_str += "\n"
+                rectangle_str += str(self.print_symbol) * self.__width + "\n"
         return rectangle_str.rstrip()
 
     def __repr__(self):
