@@ -1,0 +1,37 @@
+Return a + b.
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+>>> add_integer(2, 3)
+5
+
+addition of negative integers:
+>>> add_integer(-2, -5)
+-7
+
+>>> add_integer(2, -5)
+-3
+
+argument b has a default value of 98:
+>>> add_integer(2)
+100
+
+Adding floats is okay but they must be casted to integer:
+>>> add_integer(2.5, 5)
+7
+
+If argument is not of type integer:
+>>> add_integer("school", 4)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
+>>> add_integer(4, "4")
+Traceback (most recent call last):
+    ...
+TypeError: b must be an integer
+
+>>> add_integer(None)
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
