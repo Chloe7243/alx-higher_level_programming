@@ -15,6 +15,18 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
+        """Sets the width of the rectangle.
+
+        Args:
+            value (int): The size of a side of the rectangle.
+
+        Raises:
+            TypeError: If value is not an integer.
+            ValueError: If value is less than 0.
+
+        Returns:
+            None
+        """
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value < 0:
