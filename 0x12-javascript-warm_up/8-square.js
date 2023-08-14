@@ -5,9 +5,5 @@ if (!argv[2] || !Number(argv[2])) {
 }
 
 for (let i = 0; i < Number(argv[2]); i++) {
-  const line = [];
-  for (let j = 0; j < Number(argv[2]); j++) {
-    line.push('X');
-  }
-  console.log(line.join(''));
+  console.log(''.padEnd(Number(argv[2]), 'X'));
 }
