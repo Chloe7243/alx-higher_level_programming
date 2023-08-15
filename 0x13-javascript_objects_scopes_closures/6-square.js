@@ -3,7 +3,6 @@ const MSquare = require('./5-square');
 module.exports = class Square extends MSquare {
   constructor (size) {
     super(size);
-    this.size = size;
   }
 
   charPrint (c = 'x') {
