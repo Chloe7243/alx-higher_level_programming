@@ -5,7 +5,7 @@ module.exports = class Square extends MSquare {
     super(size, size);
   }
 
-  harPrint (c = 'X') {
+  charPrint (c = 'X') {
     super.print(c);
   }
 };
