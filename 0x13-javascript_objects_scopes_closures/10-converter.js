@@ -1,4 +1,5 @@
 #!/usr/bin/node
 exports.converter = function (base) {
-  return myConverter = (n) => n.toString(base);
+  const myConverter = (n) => n.toString(base);
+  return myConverter;
 };
