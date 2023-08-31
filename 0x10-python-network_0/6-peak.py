@@ -18,4 +18,4 @@ def find_peak(list_of_integers):
         elif (mid > 0 and loi[mid - 1] > loi[mid]):
             return find_peak(loi[0:mid])
         else:
-            return find_peak(loi[(mid + 1):]);
+            return find_peak(loi[(mid + 1):])
