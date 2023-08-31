@@ -10,7 +10,7 @@ def find_peak(list_of_integers):
     if (loil == 0):
         return None
     else:
-        i = 0;
+        i = 0
         while (i + 1 < loil and loi[i + 1] > loi[i]):
             i += 1
         return loi[i]
