@@ -12,8 +12,8 @@ def find_peak(list_of_integers):
         return None
     else:
         mid = int(loil / 2)
-        if (mid == 0 or
-                (loi[mid - 1] <= loi[mid] and loi[mid + 1] <= loi[mid])):
+        if ((mid == 0 or loi[mid - 1] <= loi[mid]) and
+                (mid == loil - 1 or loi[mid + 1] <= loi[mid])):
             return loi[mid]
         elif (mid > 0 and loi[mid - 1] > loi[mid]):
             return find_peak(loi[0:mid])
