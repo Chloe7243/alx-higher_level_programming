@@ -1,3 +1,3 @@
 #!/bin/bash
 # displays the size of the body of the response
-curl -sw "%{size_download}\n" $1 | grep -o -E '[0-9]+'
+curl -sw "\n%{size_download}\n" $1 | tail -n1
