@@ -8,8 +8,7 @@ if __name__ == "__main__":
     try:
         res = requests.get(argv[1])
         status = res.raise_for_status()
-        if (status != None):
+        if (status is None):
             print(res.text)
     except requests.exceptions.HTTPError as e:
         print(f"Error code: {str(e)[:3]}")
-~                                          
