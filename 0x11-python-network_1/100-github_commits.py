@@ -1,14 +1,18 @@
 #!/usr/bin/python3
-""" A Python script that takes your GitHub credentials (username and password) and uses the GitHub API to display your id """
+"""
+A Python script that list 10 commits (from the most recent to oldest)
+"""
 import requests
 from sys import argv
 
 
 if __name__ == "__main__":
     try:
-        res = requests.get(f"https://api.github.com/repos/{argv[1]}/{argv[2]}/commits")
+        url = f"https://api.github.com/repos/{argv[1]}/{argv[2]}/commits"
+        res = requests.get(url)
         data = res.json()
         for i in range(10):
-            print(f"{data[i]['sha']}: {data[i]['commit']['author']['name']}")
+            res = f"{data[i]['sha']}: {data[i]['commit']['author']['name']}"
+            print(res)
     except ValueError as e:
         print(None)
