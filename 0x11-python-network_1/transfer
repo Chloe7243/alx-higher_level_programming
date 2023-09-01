@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+scp $1 077bf8ffffe0@077bf8ffffe0.23190f98.alx-cod.online:~/
