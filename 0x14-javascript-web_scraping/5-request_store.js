@@ -9,8 +9,7 @@ request(args[2], (error, response, body) => {
     return;
   }
 
-  const data = response.body;
-  fs.writeFile(args[3], data, { encoding: 'utf8' }, err => {
+  fs.writeFile(args[3], body, { encoding: 'utf8' }, err => {
     return err;
   });
 });

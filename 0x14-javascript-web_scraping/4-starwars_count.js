@@ -7,7 +7,7 @@ request(args[2], (error, response, body) => {
   if (error || !response) {
     return;
   }
-  const data = JSON.parse(response.body);
+  const data = JSON.parse(body);
   let episodes = 0;
   data.results.forEach((episode) => {
     if (episode.characters.filter((x) => x.includes('/people/18/')).length !== 0) {

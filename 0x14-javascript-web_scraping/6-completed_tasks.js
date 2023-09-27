@@ -7,7 +7,7 @@ request(args[2], (error, response, body) => {
   if (error || !response) {
     return;
   }
-  const data = JSON.parse(response.body);
+  const data = JSON.parse(body);
   const users = {};
   data.forEach((task) => {
     if (task.completed) {
