@@ -11,7 +11,7 @@ request(args[2], (error, response, body) => {
   const users = {};
   data.forEach((task) => {
     if (task.completed) {
-      users[task.userId] = (users[task.userId] ?? 1) + 1;
+      users[task.userId] = (users[task.userId] ?? 0) + 1;
     }
   });
   console.log(users);
